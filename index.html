@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuilding Dams in Suffolk County</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #2d472c;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #2d472c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        header img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+      .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+      .container h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #2d472c;
+        }
+      .container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+      .container ol {
+            padding-left: 20px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+      .container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+      .container table th,
+      .container table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+      .container table th {
+            background-color: #a4c69e;
+            font-size: 1.2em;
+        }
+      .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin-top: 40px;
+            text-align: center;
+        }
+      .slideshow-container img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+      .slideshow-container img.active {
+            display: block;
+        }
+      .slideshow-controls {
+            margin-top: 10px;
+            text-align: center;
+        }
+      .slideshow-controls button {
+            padding: 10px 15px;
+            background-color: #2d472c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 1.1em;
+        }
+      .slideshow-controls button:hover {
+            background-color: #1b3b1a;
+        }
+
+      .poll {
+            background-color: #e9f1e5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+      .poll button {
+            padding: 10px 20px;
+            background-color: #2d472c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+      .poll button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+      .comment-section {
+            margin-top: 50px;
+        }
+      .comment-section h1 {
+            font-size: 2em;
+            color: #2d472c;
+        }
+      .comment-section textarea {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+      .comment-section button {
+            padding: 10px 20px;
+            background-color: #2d472c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-radius: 8px;
+        }
+      .comment-section button:hover {
+            background-color: #1b3b1a;
+        }
+      .comment-container {
+            margin-top: 30px;
+        }
+      .comment-container p {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        ion-icon{
+            color: white;
+            font-size: 42px;
+            float: left; 
+            margin-left: 10px;
+        }
+      .ion-icon a { 
+            display: inline-block; 
+        }
+      .ion-icon {
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start;
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://tbrnewsmedia.com/wp-content/uploads/2024/08/IMG_8570-scaled.jpg" alt="Header Image">
+        <h1>Rebuilding Dams in Suffolk County</h1>
+        <div class="ion-icon">
+            <a href="https://www.facebook.com/seatuck/" target="_blank" aria-label="Facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://x.com/SeatuckEnvAssoc" target="_blank" aria-label="Twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/seatuckenvironmental" target="_blank" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCXM4kAoclyb1Mjn3mmZN-zw" target="_blank" aria-label="YouTube">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Preamble</h2>
+        <p>Many dams on Long Island were built decades ago for industrial, agricultural, or recreational purposes. However, changing environmental conditions, aging infrastructure, and evolving water management strategies have raised questions about whether certain dams should be rebuilt after destruction.</p>
+
+        <h2>Open Letter to County Executive</h2>
+        <p>Dear County Executive <b>Edward P. Romaine</b>,</p>
+        <p>I am writing to urge careful reconsideration of the proposed dam reconstruction efforts at Stonybrook Mill Pond and Stump Pond. While I understand the intention to restore these structures, I believe this approach poses significant risks to Long Island's ecological integrity and long-term sustainability.</p>
+        <p>Dams disrupt natural water flow, fragment aquatic habitats, and impede fish migration, leading to a decline in native species and overall biodiversity. In our region, species such as river herring and American eel rely on free-flowing waterways to complete their life cycles. Restoring natural stream connectivity would bolster these populations and enhance the overall health of our aquatic ecosystems.</p>
+        <p>Moreover, maintaining and reconstructing dams often results in costly, ongoing maintenance and liability concerns. As climate change exacerbates flooding and extreme weather events, aging infrastructure may become increasingly vulnerable. Removing the dams would not only alleviate these long-term financial burdens but also promote resilience by allowing rivers to adapt naturally to changing environmental conditions.</p>
+        <p>Finally, dam removal presents an opportunity to improve water quality and restore wetland ecosystems. Healthy wetlands act as natural buffers, filtering pollutants, mitigating flooding, and providing critical wildlife habitat. These ecosystem services are invaluable for ensuring the long-term environmental and economic well-being of Suffolk County.</p>
+        <p>I urge you to prioritize ecological restoration and sustainable water management practices over dam reconstruction. Doing so will safeguard our natural resources for future generations and position Suffolk County as a leader in conservation and environmental resilience.</p>
+        <p>Thank you for your time and consideration.</p>
+        <p>Sincerely,</p>
+
+        <p style="font-size: 42px; font-family: 'Roundhand Snell', 'Brush Script MT', cursive; text-align: center;">Xavier Rubira</p>
+
+        <h2>Background</h2>
+        <p>This project focuses on the dams at Mill Pond in Stony Brook, New York, and Stump Pond in Smithtown, New York, which were destroyed in a storm in August 2024. The dam at Mill Pond has historically provided aesthetic and recreational benefits, but concerns about sediment accumulation and ecological disruption have emerged. Similarly, Stump Pond, a prominent feature supporting diverse wildlife, also raises issues related to water quality and hydrological alteration.</p>
+
+        <h2>Key Considerations</h2>
+        <ol>
+            <li>Environmental impact of rebuilding versus removal</li>
+            <li>Hydrological changes and water quality concerns</li>
+            <li>Effects on local wildlife and biodiversity</li>
+            <li>Economic implications for Suffolk County</li>
+            <li>Public and stakeholder interests</li>
+        </ol>
+
+        <h2>Comparison of Mill Pond and Stump Pond</h2>
+        <table>
+            <tr>
+                <th>Pond</th>
+                <th>Historical Purpose</th>
+                <th>Current Concerns</th>
+            </tr>
+            <tr>
+                <td>Mill Pond</td>
+                <td>Recreation & Aesthetics</td>
+                <td>Sediment Accumulation, Ecological Disruption</td>
+            </tr>
+            <tr>
+                <td>Stump Pond</td>
+                <td>Wildlife Habitat</td>
+                <td>Water Quality, Hydrological Alteration</td>
+            </tr>
+        </table>
+
+        <h2>Images of the Dam Destruction</h2>
+        <div class="slideshow-container">
+            <img src="https://esassoc.com/wp-content/uploads/2021/10/Mill-Pond-Dam.jpg" class="active">
+            <img src="https://tbrnewsmedia.com/wp-content/uploads/2024/08/IMG_2322-scaled.jpg">
+            <img src="https://npr.brightspotcdn.com/7b/5e/c6b4c6df49b5804d8ad44f2fdc7c/53935297372-e90175615a-o.jpg">
+            <img src="https://www.newsday.com/_next/image?url=https%3A%2F%2Fcdn.newsday.com%2Fimage-service%2Fversion%2Fc%3ANjE3NzYwMDktNmI3OC00%3AODNlMDExZDItMTk2MS00%2Flifklood240822.jpg%3Ff%3DLandscape%2B16%253A9%26w%3D770%26q%3D1&w=1920&q=80">
+            <img src="https://tbrnewsmedia.com/wp-content/uploads/2024/08/IMG_1902-scaled.jpg">
+        </div>
+        <div class="slideshow-controls">
+            <button onclick="prevSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <h2>Public Poll: Should the Dams Be Rebuilt?</h2>
+        <div class="poll">
+            <p>Do you think Suffolk County should rebuild the dams at Mill Pond and Stump Pond?</p>
+            <button id="yes-btn" onclick="vote('yes')">Yes</button>
+            <button id="no-btn" onclick="vote('no')">No</button>
+            <p id="poll-results"></p>
+        </div>
+        
+        <h2> To Learn More Watch Here:</h2>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XfJdTCmkoaA?si=JGVNHKH7gs0B-mk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div> </div>
+
+        <div class="comment-section">
+            <h1>Please Add Your Comment</h1>
+            <textarea id="new-comment" cols="60" rows="5"></textarea>
+            <br>
+            <button id="btn-post">Post</button>
+            <div id="comment-container"></div>
+        </div>
+    </div>
+
+    <script>
+        // Slideshow functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slideshow-container img");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        // Voting functionality
+        let hasVoted = false;
+
+        function vote(option) {
+            if (hasVoted) {
+                alert('You have already voted.');
+            return;
+    }
+
+        hasVoted = true;
+
+        const yesBtn = document.getElementById('yes-btn');
+        const noBtn = document.getElementById('no-btn');
+        const pollResults = document.getElementById('poll-results');
+
+        yesBtn.disabled = true;
+        noBtn.disabled = true;
+
+        pollResults.innerText = `Thank you for voting: ${option.charAt(0).toUpperCase() + option.slice(1)}`;
+        }
+
+        // Comment posting functionality
+        document.getElementById("btn-post").addEventListener("click", function () {
+            const newComment = document.getElementById("new-comment").value;
+            if (newComment.trim()) {
+                const commentContainer = document.getElementById("comment-container");
+                const commentElement = document.createElement("p");
+                commentElement.innerText = newComment;
+                commentContainer.appendChild(commentElement);
+                document.getElementById("new-comment").value = "";
+            }
+        });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
